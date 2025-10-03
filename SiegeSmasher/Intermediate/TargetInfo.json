@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "SiegeSmasher",
+			"Path": "..\\Source\\SiegeSmasher.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SiegeSmasherEditor",
+			"Path": "..\\Source\\SiegeSmasherEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

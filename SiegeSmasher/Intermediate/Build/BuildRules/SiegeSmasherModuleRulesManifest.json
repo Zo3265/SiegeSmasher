@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Unreal\\SiegeSmasher\\Source\\SiegeSmasher\\SiegeSmasher.Build.cs",
+		"C:\\Unreal\\SiegeSmasher\\Source\\SiegeSmasher.Target.cs",
+		"C:\\Unreal\\SiegeSmasher\\Source\\SiegeSmasherEditor.Target.cs"
+	],
+	"EngineVersion": "5.5.4"
+}
