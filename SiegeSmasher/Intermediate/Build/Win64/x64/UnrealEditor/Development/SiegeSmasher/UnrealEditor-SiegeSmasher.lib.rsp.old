@@ -6,8 +6,11 @@
 /NAME:"UnrealEditor-SiegeSmasher.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\Unreal\SiegeSmasher\Intermediate\Build\Win64\x64\SiegeSmasherEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
-"C:\Unreal\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\SiegeSmasher.cpp.obj"
-"C:\Unreal\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\PerModuleInline.gen.cpp.obj"
-"C:\Unreal\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\Default.rc2.res"
-/OUT:"C:\Unreal\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\UnrealEditor-SiegeSmasher.lib"
+"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\SiegeSmasherEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\MainCharacter.gen.cpp.obj"
+"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\SiegeSmasher.init.gen.cpp.obj"
+"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\SiegeSmasher.cpp.obj"
+"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\PerModuleInline.gen.cpp.obj"
+"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\MainCharacter.cpp.obj"
+"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\Default.rc2.res"
+/OUT:"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\UnrealEditor-SiegeSmasher.lib"

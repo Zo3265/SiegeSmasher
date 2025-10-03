@@ -5,6 +5,8 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"G:/Unreal Projects/SiegeSmasher/SiegeSmasher/Content/BP_MainCharacter.uasset",
+				"G:/Unreal Projects/SiegeSmasher/SiegeSmasher/Content/BP_MyGameModeBase.uasset",
 				"C:/Users/richa/OneDrive/Desktop/SiegeSmasher/SiegeSmasher/SiegeSmasher/Content/JamesTestMap.umap",
 				"C:/Unreal/SiegeSmasher/Content/ZoTestMap_HLOD0_Instancing.uasset",
 				"C:/Unreal/SiegeSmasher/Content/__ExternalActors__/ZoTestMap/5/YT/ISAZ2LFU2B7PELMRB3KJ6J.uasset",
