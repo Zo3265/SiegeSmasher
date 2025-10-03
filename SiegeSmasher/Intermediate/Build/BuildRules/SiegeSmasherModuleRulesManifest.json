@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\richa\\OneDrive\\Desktop\\SiegeSmasher\\SiegeSmasher\\SiegeSmasher\\Source\\SiegeSmasher\\SiegeSmasher.Build.cs",
-		"C:\\Users\\richa\\OneDrive\\Desktop\\SiegeSmasher\\SiegeSmasher\\SiegeSmasher\\Source\\SiegeSmasher.Target.cs",
-		"C:\\Users\\richa\\OneDrive\\Desktop\\SiegeSmasher\\SiegeSmasher\\SiegeSmasher\\Source\\SiegeSmasherEditor.Target.cs"
+		"G:\\Unreal Projects\\SiegeSmasher\\SiegeSmasher\\Source\\SiegeSmasher\\SiegeSmasher.Build.cs",
+		"G:\\Unreal Projects\\SiegeSmasher\\SiegeSmasher\\Source\\SiegeSmasher.Target.cs",
+		"G:\\Unreal Projects\\SiegeSmasher\\SiegeSmasher\\Source\\SiegeSmasherEditor.Target.cs"
 	],
 	"EngineVersion": "5.5.4"
 }
