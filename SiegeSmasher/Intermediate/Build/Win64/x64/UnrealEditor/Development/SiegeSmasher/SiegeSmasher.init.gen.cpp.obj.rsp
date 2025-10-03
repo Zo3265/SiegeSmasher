@@ -1,12 +1,12 @@
-"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\UnrealEditor\Inc\SiegeSmasher\UHT\SiegeSmasher.init.gen.cpp"
-/FI"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\SiegeSmasherEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\Definitions.SiegeSmasher.h"
-/Yu"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\SiegeSmasherEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/Fp"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\SiegeSmasherEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\SiegeSmasher.init.gen.cpp.obj"
-/experimental:log "G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\SiegeSmasher.init.gen.cpp.sarif"
-/sourceDependencies "G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\SiegeSmasher.init.gen.cpp.dep.json"
-@"G:\Unreal Projects\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\SiegeSmasher.Shared.rsp"
+"C:\Users\richa\OneDrive\Desktop\SiegeSmasher\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\UnrealEditor\Inc\SiegeSmasher\UHT\SiegeSmasher.init.gen.cpp"
+/FI"C:\Users\richa\OneDrive\Desktop\SiegeSmasher\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\SiegeSmasherEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/FI"C:\Users\richa\OneDrive\Desktop\SiegeSmasher\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\Definitions.SiegeSmasher.h"
+/Yu"C:\Users\richa\OneDrive\Desktop\SiegeSmasher\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\SiegeSmasherEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/Fp"C:\Users\richa\OneDrive\Desktop\SiegeSmasher\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\SiegeSmasherEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
+/Fo"C:\Users\richa\OneDrive\Desktop\SiegeSmasher\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\SiegeSmasher.init.gen.cpp.obj"
+/experimental:log "C:\Users\richa\OneDrive\Desktop\SiegeSmasher\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\SiegeSmasher.init.gen.cpp.sarif"
+/sourceDependencies "C:\Users\richa\OneDrive\Desktop\SiegeSmasher\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\SiegeSmasher.init.gen.cpp.dep.json"
+@"C:\Users\richa\OneDrive\Desktop\SiegeSmasher\SiegeSmasher\SiegeSmasher\Intermediate\Build\Win64\x64\UnrealEditor\Development\SiegeSmasher\SiegeSmasher.Shared.rsp"
 /d2ssa-cfg-question-
 /Zc:inline
 /nologo

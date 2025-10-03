@@ -51,5 +51,41 @@
     <ClCompile Include="..\..\Source\SiegeSmasher\SiegeSmasher.h">
       <Filter>Source\SiegeSmasher</Filter>
     </ClCompile>
+    <Filter Include="Source\SiegeSmasher\Enemies">
+      <UniqueIdentifier>{188E0CC3-C50E-3B5A-B1CA-A81AA93C3F29}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SiegeSmasher\Enemies\EnemyBase.cpp">
+      <Filter>Source\SiegeSmasher\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SiegeSmasher\Enemies\EnemyBase.h">
+      <Filter>Source\SiegeSmasher\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SiegeSmasher\Enemies\EnemyInheritTest.cpp">
+      <Filter>Source\SiegeSmasher\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SiegeSmasher\Enemies\EnemyInheritTest.h">
+      <Filter>Source\SiegeSmasher\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SiegeSmasher\Enemies\EnemyInheritTest1.cpp">
+      <Filter>Source\SiegeSmasher\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SiegeSmasher\Enemies\EnemyInheritTest1.h">
+      <Filter>Source\SiegeSmasher\Enemies</Filter>
+    </ClCompile>
+    <Filter Include="Source\SiegeSmasher\WaveGen">
+      <UniqueIdentifier>{3A4E3FAF-B504-3C2B-8473-F8C0FF6BF573}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SiegeSmasher\WaveGen\SpawnPoint.cpp">
+      <Filter>Source\SiegeSmasher\WaveGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SiegeSmasher\WaveGen\SpawnPoint.h">
+      <Filter>Source\SiegeSmasher\WaveGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SiegeSmasher\WaveGen\WaveManager.cpp">
+      <Filter>Source\SiegeSmasher\WaveGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SiegeSmasher\WaveGen\WaveManager.h">
+      <Filter>Source\SiegeSmasher\WaveGen</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
