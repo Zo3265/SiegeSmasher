@@ -18,6 +18,11 @@ void AEnemyBase::BeginPlay()
 
 }
 
+int AEnemyBase::EnemyTest()
+{
+	return 0;
+}
+
 // Called every frame
 void AEnemyBase::Tick(float DeltaTime)
 {
