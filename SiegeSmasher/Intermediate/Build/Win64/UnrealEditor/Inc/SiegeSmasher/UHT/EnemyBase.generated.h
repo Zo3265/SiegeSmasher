@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SIEGESMASHER_EnemyBase_generated_h
 
-#define FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h_23_INCLASS_NO_PURE_DECLS \
+#define FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEnemyBase(); \
 	friend struct Z_Construct_UClass_AEnemyBase_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(AEnemyBase)
 
 
-#define FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h_23_ENHANCED_CONSTRUCTORS \
+#define FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AEnemyBase(AEnemyBase&&); \
@@ -35,12 +35,12 @@ public: \
 	NO_API virtual ~AEnemyBase();
 
 
-#define FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h_19_PROLOG
-#define FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h_23_GENERATED_BODY \
+#define FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h_19_PROLOG
+#define FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h_23_INCLASS_NO_PURE_DECLS \
-	FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h_23_ENHANCED_CONSTRUCTORS \
+	FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h_23_INCLASS_NO_PURE_DECLS \
+	FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -48,7 +48,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> SIEGESMASHER_API UClass* StaticClass<class AEnemyBase>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h
+#define CURRENT_FILE_ID FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_Enemies_EnemyBase_h
 
 
 #define FOREACH_ENUM_ENEMYTYPES(op) \

@@ -28,7 +28,7 @@ public:
 protected:
 
 	virtual void BeginPlay() override;
-	
+	int EnemyTest();
 	int EnemyStartingCount = 8;
 	
 	float WavePolynomialConstantOne = 0.7f;
