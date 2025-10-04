@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\unreal\\siegesmasher\\source\\siegesmasher\\siegesmasher.cpp",
+        "Source": "c:\\users\\kewin\\desktop\\c++ assigment\\siegesmasher\\siegesmasher\\source\\siegesmasher\\siegesmasher.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\unreal\\siegesmasher\\intermediate\\build\\win64\\x64\\siegesmashereditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\users\\kewin\\desktop\\c++ assigment\\siegesmasher\\siegesmasher\\intermediate\\build\\win64\\x64\\siegesmashereditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\unreal\\siegesmasher\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\siegesmasher\\definitions.siegesmasher.h",
-            "c:\\unreal\\siegesmasher\\source\\siegesmasher\\siegesmasher.h"
+            "c:\\users\\kewin\\desktop\\c++ assigment\\siegesmasher\\siegesmasher\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\siegesmasher\\definitions.siegesmasher.h",
+            "c:\\users\\kewin\\desktop\\c++ assigment\\siegesmasher\\siegesmasher\\source\\siegesmasher\\siegesmasher.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

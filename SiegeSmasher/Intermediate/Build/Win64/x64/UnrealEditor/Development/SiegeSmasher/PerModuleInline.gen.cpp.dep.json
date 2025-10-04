@@ -1,11 +1,11 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\unreal\\siegesmasher\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\siegesmasher\\permoduleinline.gen.cpp",
+        "Source": "c:\\users\\kewin\\desktop\\c++ assigment\\siegesmasher\\siegesmasher\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\siegesmasher\\permoduleinline.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\unreal\\siegesmasher\\intermediate\\build\\win64\\x64\\siegesmashereditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\users\\kewin\\desktop\\c++ assigment\\siegesmasher\\siegesmasher\\intermediate\\build\\win64\\x64\\siegesmashereditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\unreal\\siegesmasher\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\siegesmasher\\definitions.siegesmasher.h",
+            "c:\\users\\kewin\\desktop\\c++ assigment\\siegesmasher\\siegesmasher\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\siegesmasher\\definitions.siegesmasher.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
         ],
         "ImportedModules": [],
