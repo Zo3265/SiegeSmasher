@@ -73,3 +73,12 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+SiegeSmasher/Intermediate/Build/BuildRulesProjects/SiegeSmasherModuleRules/obj/Development/SiegeSmasherModuleRules.AssemblyInfo.cs
+SiegeSmasher/Intermediate/Build/BuildRulesProjects/SiegeSmasherModuleRules/obj/Development/SiegeSmasherModuleRules.AssemblyInfoInputs.cache
+SiegeSmasher/Intermediate/Build/BuildRulesProjects/SiegeSmasherModuleRules/obj/Development/SiegeSmasherModuleRules.GeneratedMSBuildEditorConfig.editorconfig
+SiegeSmasher/Intermediate/Build/BuildRulesProjects/SiegeSmasherModuleRules/obj/Development/SiegeSmasherModuleRules.assets.cache
+SiegeSmasher/Intermediate/Build/BuildRulesProjects/SiegeSmasherModuleRules/obj/Development/SiegeSmasherModuleRules.csproj.AssemblyReference.cache
+SiegeSmasher/Intermediate/Build/BuildRulesProjects/SiegeSmasherModuleRules/obj/SiegeSmasherModuleRules.csproj.nuget.dgspec.json
+SiegeSmasher/Intermediate/Build/BuildRulesProjects/SiegeSmasherModuleRules/obj/SiegeSmasherModuleRules.csproj.nuget.g.props
+SiegeSmasher/Intermediate/Build/BuildRulesProjects/SiegeSmasherModuleRules/obj/project.assets.json
+SiegeSmasher/Intermediate/Build/BuildRulesProjects/SiegeSmasherModuleRules/obj/project.nuget.cache
