@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SIEGESMASHER_SpawnPoint_generated_h
 
-#define FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASpawnPoint(); \
 	friend struct Z_Construct_UClass_ASpawnPoint_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(ASpawnPoint)
 
 
-#define FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ASpawnPoint(ASpawnPoint&&); \
@@ -35,12 +35,12 @@ public: \
 	NO_API virtual ~ASpawnPoint();
 
 
-#define FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h_10_PROLOG
-#define FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h_13_GENERATED_BODY \
+#define FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h_10_PROLOG
+#define FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h_13_INCLASS_NO_PURE_DECLS \
-	FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h_13_ENHANCED_CONSTRUCTORS \
+	FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h_13_INCLASS_NO_PURE_DECLS \
+	FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -48,7 +48,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> SIEGESMASHER_API UClass* StaticClass<class ASpawnPoint>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_richa_OneDrive_Desktop_SiegeSmasher_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h
+#define CURRENT_FILE_ID FID_Unreal_Projects_SiegeSmasher_SiegeSmasher_Source_SiegeSmasher_WaveGen_SpawnPoint_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
