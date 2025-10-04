@@ -1,19 +1,19 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\richa\\onedrive\\desktop\\siegesmasher\\siegesmasher\\siegesmasher\\source\\siegesmasher\\mygamemodebase.cpp",
+        "Source": "g:\\unreal projects\\siegesmasher\\siegesmasher\\source\\siegesmasher\\mygamemodebase.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\richa\\onedrive\\desktop\\siegesmasher\\siegesmasher\\siegesmasher\\intermediate\\build\\win64\\x64\\siegesmashereditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "g:\\unreal projects\\siegesmasher\\siegesmasher\\intermediate\\build\\win64\\x64\\siegesmashereditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\richa\\onedrive\\desktop\\siegesmasher\\siegesmasher\\siegesmasher\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\siegesmasher\\definitions.siegesmasher.h",
-            "c:\\users\\richa\\onedrive\\desktop\\siegesmasher\\siegesmasher\\siegesmasher\\source\\siegesmasher\\mygamemodebase.h",
-            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemode.h",
-            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
-            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
-            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
-            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
-            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemode.generated.h",
-            "c:\\users\\richa\\onedrive\\desktop\\siegesmasher\\siegesmasher\\siegesmasher\\intermediate\\build\\win64\\unrealeditor\\inc\\siegesmasher\\uht\\mygamemodebase.generated.h"
+            "g:\\unreal projects\\siegesmasher\\siegesmasher\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\siegesmasher\\definitions.siegesmasher.h",
+            "g:\\unreal projects\\siegesmasher\\siegesmasher\\source\\siegesmasher\\mygamemodebase.h",
+            "g:\\unreal\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemode.h",
+            "g:\\unreal\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "g:\\unreal\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "g:\\unreal\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "g:\\unreal\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "g:\\unreal\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemode.generated.h",
+            "g:\\unreal projects\\siegesmasher\\siegesmasher\\intermediate\\build\\win64\\unrealeditor\\inc\\siegesmasher\\uht\\mygamemodebase.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
