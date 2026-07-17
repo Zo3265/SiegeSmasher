@@ -13,7 +13,7 @@ void UChargeWidget::NativeConstruct() {
 	Super::NativeConstruct();
 	
 	
-	SceneCapture =  Cast<ASceneCapture2D>( UGameplayStatics::GetActorOfClass(GetWorld(), ASceneCapture2D::StaticClass()));
+	SceneCapture = Cast<ASceneCapture2D>( UGameplayStatics::GetActorOfClass(GetWorld(), ASceneCapture2D::StaticClass()));
 	
 	LeaderboardBorder = WidgetTree->FindWidget<UBorder>(FName(LeaderBoardBorderName));
 	LeaderboardGrid = WidgetTree->FindWidget<UGridPanel>(FName(LeaderBoardGridPanelName));
@@ -248,9 +248,11 @@ void UChargeWidget::AssignMiniMap(AMiniMapManager* MiniMapManagerPtr)
 {
 	 MiniMapManagerRef = MiniMapManagerPtr;
 	 MiniMapManagerRef->SetMiniMapParams(MiniMapWidth, MiniMapHeight);
+	
 	 MiniMapDisplayMat->SetTextureParameterValue("IconsTexture", MiniMapManagerRef->GetMiniMapBuffer());
-
+		  
 	 
+	
 
 
 }

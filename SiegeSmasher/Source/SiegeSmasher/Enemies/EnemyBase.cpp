@@ -46,6 +46,7 @@ void AEnemyBase::BeginPlay()
 	MiniMapCameraRef = Cast<ACameraActor>( UGameplayStatics::GetActorOfClass(GetWorld(), ACameraActor::StaticClass()));
 	MiniMapManagerRef = Cast<AMiniMapManager>(UGameplayStatics::GetActorOfClass(GetWorld(), AMiniMapManager::StaticClass()));
 	
+	PlayerReference = Cast<AMainCharacterTest>(UGameplayStatics::GetActorOfClass(GetWorld(), AMainCharacterTest::StaticClass()));
 
 
 
@@ -288,7 +289,61 @@ FVector2D AEnemyBase::CalcMiniMapCoords()
 
 
 void AEnemyBase::WriteToMiniMap()
-{
+{ 
+	// i know we could use raycasting here but that could be quite expensive need to figure out a more accurate way of 
+    // detecing when the enemy is below the player though as simply thresholding based on z difference is ok but is very depedant on thickness of 
+   // floors and ceiling 
+   //  however its probably better to just do a raycast but im just thinking of 500 enemies doing this ray cast at once 
+   // however there can only be 150 enemies on screen at once anyway 
+
+
+	FVector CurrentLoc = GetActorLocation() + FVector( 0.0f,0.0f,CapsuleStore->GetScaledCapsuleHalfHeight());
+	FVector Target = (PlayerReference->GetActorLocation() + FVector(0.0f,0.0f,PlayerReference->GetCapsuleComponent()->GetScaledCapsuleHalfHeight()));
+	FVector ToTarget = (PlayerReference->GetActorLocation() + FVector(0.0f, 0.0f, PlayerReference->GetCapsuleComponent()->GetScaledCapsuleHalfHeight())) - CurrentLoc;
+	//FVector TargetDir = ToTarget.GetSafeNormal();
+	//
+	//bool surfaceHit =  GetWorld()->LineTraceSingleByChannel(MiniMapLOSResult, CurrentLoc,
+	//	Target, TowerNoLOSChannel);
+	//
+	//bool flipDir = ToTarget.Z < 0.0f;
+	//FVector playerSurfaceCheckDir = FVector::UpVector * (1.0f - (flipDir)) + (-FVector::UpVector) * flipDir;
+
+	/*bool playerSurfaceHit = GetWorld()->LineTraceSingleByChannel(PlayerMiniMapLOSResult, PlayerReference->GetActorLocation(),
+		PlayerReference->GetActorLocation() + ( - FVector::UpVector * 1000000.0f), TowerNoLOSChannel);
+	float miniMapAlphaFade = 0.0f;
+	if( AActor* surface =  PlayerMiniMapLOSResult.GetActor() )
+	{
+
+	    play 
+
+		 PlayerMiniMapLOSResult.GetActor()->GetActorLocation(); 
+
+
+
+	
+	}*/
+	
+
+	
+
+	//DrawDebugSphere(GetWorld(), CurrentLoc, 5.0f, 8, FColor::Blue);
+	//float EnemyAboveTest = TargetDir.Dot(FVector::UpVector);
+	//float EnemyBelowTest = TargetDir.Dot(-FVector::UpVector);
+
+	//bool occluded = PlayerMiniMapLOSResult.GetActor()->GetActorLocation() == MiniMapLOSResult.GetActor()->GetActorLocation();;
+	float MiniMapZFadePercent = fabs(PlayerReference->GetActorLocation().Z - GetActorLocation().Z) / MiniMapZFadeDist;
+
+	bool ShouldFade = MiniMapZFadePercent >= MinMiniMapFadeThreshold ;
+	
+	GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor::Blue,FString::Printf(TEXT(" fade percent %f min thresh %f current z difference %f" ),MiniMapZFadePercent, MinMiniMapFadeThreshold, fabs(PlayerReference->GetActorLocation().Z - GetActorLocation().Z)));
+
+
+	float MiniMapAlpha = 1.0f -   std::max( MiniMapZFadePercent,MaxMiniMapFadeAlpha) * (ShouldFade);
+	
+	
+	//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue, FString::Printf(TEXT("Mini map alpha fade %f difference %f"), MiniMapAlpha,fabs( PlayerReference->GetActorLocation().Z - GetActorLocation().Z)));
+	
+	MiniMapMat->SetVectorParameterValue("MiniMapCol", FVector4(MiniMapRgb, MiniMapAlpha));
 	MiniMapMat->SetScalarParameterValue("EnemyMiniMapRadi", EnemyMiniMapRadius);
 	MiniMapManagerRef->WriteToMiniMap(GetActorLocation(),0.0, EnemyMiniMapSectionRadius, MiniMapMat);
 	

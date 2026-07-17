@@ -15,6 +15,10 @@
  #define MAX_ENEMY_NUM 150
 #endif // !MAX_ENEMY_NUM
 
+#ifndef TowerNoLOSChannel
+#define TowerNoLOSChannel ECC_GameTraceChannel8
+#endif // !TowerNoLOSChannel
+
 
 UENUM(BlueprintType)
 enum class EnemyTypes : uint8
@@ -73,7 +77,16 @@ protected:
 	int EnemyStartingCount = 8;
 	
 	double EnemyMiniMapRadius =  0.2f;
-	double EnemyMiniMapSectionRadius = 0.05f;
+	double EnemyMiniMapSectionRadius = 0.065f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MiniMap");
+	FVector MiniMapRgb = FVector(1.0f,0.0f,0.0f);
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MiniMap", meta = (ClampMin = "0.2", ClampMax = "0.85"));
+	float MaxMiniMapFadeAlpha = 0.35f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MiniMap");
+	float MiniMapZFadeDist = 1650.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MiniMap");
+	float MinMiniMapFadeThreshold = 0.15f;
 	float WavePolynomialConstantOne = 0.7f;
 	float WavePolynomialConstantTwo = 0.2f;
 	int CurrentWaveContribution = 0;
@@ -93,7 +106,7 @@ protected:
 
 	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const;
 
-
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "EnemyVariables")
 	float MaxHealth = 100.0f;
 
@@ -175,6 +188,8 @@ public:
 	void SetEnemyAliveCountref(int* WaveEnemyAliveCount); 
 
 
+
+
 	int GetScoreIncOnKill(); 
 	int GetScoreIncOnHit();
 	FVector2D CalcMiniMapCoords();
@@ -194,9 +209,10 @@ private:
 	UPROPERTY();
 	UMaterialInstanceDynamic* MiniMapMat;
 
+	AMainCharacterTest* PlayerReference = nullptr;
 
-	
-
+	FHitResult MiniMapLOSResult;
+	FHitResult PlayerMiniMapLOSResult;
 
 
 

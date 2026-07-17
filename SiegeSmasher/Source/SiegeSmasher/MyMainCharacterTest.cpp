@@ -112,6 +112,7 @@ void AMainCharacterTest::BeginPlay()
 				//Gives the charge widget reference to the server object and server object the reference to this player
 				ChargeWidget->SetServerObjectRef(ServerObjectRef);
 				ServerObjectRef->SetPlayerStateToHandle(this);
+				
 				ChargeWidget->AssignMiniMap(miniMapManagertRef);
 
 				//sets the base health to the correct value at begin play

@@ -450,7 +450,7 @@ private:
 
 		void ClientTowerPlacment();
 		void WriteToMiniMap();
-		double MiniMapSectionRadius = 0.05;
+		double MiniMapSectionRadius = 0.03;
 		UPROPERTY();
 		UMaterialInstanceDynamic* MiniMapMat;
 
