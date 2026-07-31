@@ -14,7 +14,7 @@ ATowerProjectileBase::ATowerProjectileBase()
 	ProjectileMesh = CreateDefaultSubobject<UStaticMeshComponent>("Projectile Mesh"); 
 	ProjectileMesh->SetCollisionProfileName(FName("TowerProjectile"));
 	RootComponent = ProjectileMesh;
-	PlayerRef = nullptr;
+	PlayerRef = nullptr; 
 
 	//ProjectileMesh->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Overlap);
 

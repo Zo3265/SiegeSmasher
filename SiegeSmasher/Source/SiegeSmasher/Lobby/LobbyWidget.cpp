@@ -80,13 +80,16 @@ FReply ULobbyWidget::NativeOnMouseWheel(const FGeometry& InGeometry, const FPoin
 
 		//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue,FString::Printf(TEXT("scroll delta %f"), scrollDelta));
 
-		CurrentLevelSelectInterpSpeed = (3000.0f + (7000.0f - 3000.0f) * abs(scrollDelta)) * (scrollDelta != 0.0f);
+		CurrentLevelSelectInterpSpeed = (scrollInterpSpeedMin + (scrollInterpSpeedMax - scrollInterpSpeedMin) * abs(scrollDelta)) * (scrollDelta != 0.0f);
 
+		GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor::Blue,FString::Printf(TEXT("scroll speed %f"), CurrentLevelSelectInterpSpeed));
 		for (FLevelSelectionContainerState& LevelSelectSection : LevelSelectionContainerState)
 		{
 			UCanvasPanelSlot* slot = Cast<UCanvasPanelSlot>(LevelSelectSection.LevelSelectSection->Slot);
 			FVector2D position = slot->GetPosition();
 			
+			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue, FString::Printf(TEXT("scroll step %f %f"), scrollDelta,scrollStep ));
+
 			float nextTarget = position.Y + (scrollDelta)*scrollStep;
 			
 		    LevelSelectSection.targetScrollY = position.Y + (scrollDelta) * scrollStep;

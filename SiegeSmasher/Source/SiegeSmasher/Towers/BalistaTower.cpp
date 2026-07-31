@@ -82,7 +82,7 @@ void ABalistaTower::TowerActive(float& DeltaTime) {
 	if (EnemySingleTarget != nullptr && !LostLOs && !CurrentEnemyOutOfRange && EnemySingleTarget->GetHealth() > 0.0f) {
 
 
-	
+	     
 
 		//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue, FString::Printf(TEXT("Ballista currently active")));
 		// used to determine when the ballista can shoot during its rotation towards the enemy ensuring that it doesnt shoot 
@@ -94,8 +94,8 @@ void ABalistaTower::TowerActive(float& DeltaTime) {
 		FVector PitchVector = FVector(0.0f, 0.0f, TargetDir.Z);
 		// take the distance in the x and y axis to detemine the pitch taking into account both axis 
 		// to ensure that the ballista accuretly pitchees its turret down or upward to the target 
-		float DistanceForPitch = sqrt(ToTarget.X * ToTarget.X + ToTarget.Y * ToTarget.Y);
-		float PitchAngle = atan2f(ToTarget.Z, DistanceForPitch);
+		float DistanceForPitch = sqrt(ToTarget.X * ToTarget.X + ToTarget.Y * ToTarget.Y);         
+		float PitchAngle = atan2f(ToTarget.Z, DistanceForPitch);  
 		// get the angle in yaw by calculating the sign of the angle based on the quadrant of the unit circle the point defined by the vector lies in  
 		// and get the angle based on the ratio between the y and x of the vector between the enemy target and the turret 
 		float YawAngle = atan2f(ToTarget.Y, ToTarget.X);
@@ -134,7 +134,7 @@ void ABalistaTower::TowerActive(float& DeltaTime) {
 	// and drop out of the active state for this tower
 	if (HasAuthority()) {
 		CurrentyActive = false;
-
+		EnemySingleTarget = nullptr;
 		NoTargetsInRange = true;
 	 }
 

@@ -108,9 +108,14 @@ class SIEGESMASHER_API ULobbyWidget : public UUserWidget
 	 FSlateFontInfo LevelTextFontInfo; 
 
 	 UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "LevelSelectInput"); 
-	 float scrollStep = 1.0f;
+	 float scrollStep = 10.0f;
 
 
+	 UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "LevelSelectInput");
+	 float scrollInterpSpeedMin = 3000.0f;
+
+	 UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "LevelSelectInput");
+	 float scrollInterpSpeedMax = 7000.0f;
 
  private:
 	 TArray<FLevelSelectionContainerState> LevelSelectionContainerState;

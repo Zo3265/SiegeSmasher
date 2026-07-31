@@ -298,54 +298,59 @@ void AEnemyBase::WriteToMiniMap()
 
 
 	FVector CurrentLoc = GetActorLocation() + FVector( 0.0f,0.0f,CapsuleStore->GetScaledCapsuleHalfHeight());
-	FVector Target = (PlayerReference->GetActorLocation() + FVector(0.0f,0.0f,PlayerReference->GetCapsuleComponent()->GetScaledCapsuleHalfHeight()));
-	FVector ToTarget = (PlayerReference->GetActorLocation() + FVector(0.0f, 0.0f, PlayerReference->GetCapsuleComponent()->GetScaledCapsuleHalfHeight())) - CurrentLoc;
-	//FVector TargetDir = ToTarget.GetSafeNormal();
-	//
-	//bool surfaceHit =  GetWorld()->LineTraceSingleByChannel(MiniMapLOSResult, CurrentLoc,
-	//	Target, TowerNoLOSChannel);
-	//
-	//bool flipDir = ToTarget.Z < 0.0f;
-	//FVector playerSurfaceCheckDir = FVector::UpVector * (1.0f - (flipDir)) + (-FVector::UpVector) * flipDir;
-
-	/*bool playerSurfaceHit = GetWorld()->LineTraceSingleByChannel(PlayerMiniMapLOSResult, PlayerReference->GetActorLocation(),
-		PlayerReference->GetActorLocation() + ( - FVector::UpVector * 1000000.0f), TowerNoLOSChannel);
-	float miniMapAlphaFade = 0.0f;
-	if( AActor* surface =  PlayerMiniMapLOSResult.GetActor() )
+	if(PlayerReference != nullptr)
 	{
+		FVector Target = (PlayerReference->GetActorLocation() + FVector(0.0f, 0.0f, PlayerReference->GetCapsuleComponent()->GetScaledCapsuleHalfHeight()));
+		FVector ToTarget = (PlayerReference->GetActorLocation() + FVector(0.0f, 0.0f, PlayerReference->GetCapsuleComponent()->GetScaledCapsuleHalfHeight())) - CurrentLoc;
+		//FVector TargetDir = ToTarget.GetSafeNormal();
+		//
+		//bool surfaceHit =  GetWorld()->LineTraceSingleByChannel(MiniMapLOSResult, CurrentLoc,
+		//	Target, TowerNoLOSChannel);
+		//
+		//bool flipDir = ToTarget.Z < 0.0f;
+		//FVector playerSurfaceCheckDir = FVector::UpVector * (1.0f - (flipDir)) + (-FVector::UpVector) * flipDir;
 
-	    play 
+		/*bool playerSurfaceHit = GetWorld()->LineTraceSingleByChannel(PlayerMiniMapLOSResult, PlayerReference->GetActorLocation(),
+			PlayerReference->GetActorLocation() + ( - FVector::UpVector * 1000000.0f), TowerNoLOSChannel);
+		float miniMapAlphaFade = 0.0f;
+		if( AActor* surface =  PlayerMiniMapLOSResult.GetActor() )
+		{
 
-		 PlayerMiniMapLOSResult.GetActor()->GetActorLocation(); 
+			play
+
+			 PlayerMiniMapLOSResult.GetActor()->GetActorLocation();
 
 
 
+
+		}*/
+
+
+
+
+		//DrawDebugSphere(GetWorld(), CurrentLoc, 5.0f, 8, FColor::Blue);
+		//float EnemyAboveTest = TargetDir.Dot(FVector::UpVector);
+		//float EnemyBelowTest = TargetDir.Dot(-FVector::UpVector);
+
+		//bool occluded = PlayerMiniMapLOSResult.GetActor()->GetActorLocation() == MiniMapLOSResult.GetActor()->GetActorLocation();;
+		float MiniMapZFadePercent = fabs(PlayerReference->GetActorLocation().Z - GetActorLocation().Z) / MiniMapZFadeDist;
+
+		bool ShouldFade = MiniMapZFadePercent >= MinMiniMapFadeThreshold;
+
+		//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue, FString::Printf(TEXT(" fade percent %f min thresh %f current z difference %f"), MiniMapZFadePercent, MinMiniMapFadeThreshold, fabs(PlayerReference->GetActorLocation().Z - GetActorLocation().Z)));
+
+
+		float MiniMapAlpha = 1.0f - std::max(MiniMapZFadePercent, MaxMiniMapFadeAlpha) * (ShouldFade);
+
+
+		//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue, FString::Printf(TEXT("Mini map alpha fade %f difference %f"), MiniMapAlpha,fabs( PlayerReference->GetActorLocation().Z - GetActorLocation().Z)));
+
+		MiniMapMat->SetVectorParameterValue("MiniMapCol", FVector4(MiniMapRgb, MiniMapAlpha));
+		MiniMapMat->SetScalarParameterValue("EnemyMiniMapRadi", EnemyMiniMapRadius);
+		MiniMapManagerRef->WriteToMiniMap(GetActorLocation(), 0.0, EnemyMiniMapSectionRadius, MiniMapMat);
 	
-	}*/
+	}
 	
-
-	
-
-	//DrawDebugSphere(GetWorld(), CurrentLoc, 5.0f, 8, FColor::Blue);
-	//float EnemyAboveTest = TargetDir.Dot(FVector::UpVector);
-	//float EnemyBelowTest = TargetDir.Dot(-FVector::UpVector);
-
-	//bool occluded = PlayerMiniMapLOSResult.GetActor()->GetActorLocation() == MiniMapLOSResult.GetActor()->GetActorLocation();;
-	float MiniMapZFadePercent = fabs(PlayerReference->GetActorLocation().Z - GetActorLocation().Z) / MiniMapZFadeDist;
-
-	bool ShouldFade = MiniMapZFadePercent >= MinMiniMapFadeThreshold ;
-	
-	GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor::Blue,FString::Printf(TEXT(" fade percent %f min thresh %f current z difference %f" ),MiniMapZFadePercent, MinMiniMapFadeThreshold, fabs(PlayerReference->GetActorLocation().Z - GetActorLocation().Z)));
-
-
-	float MiniMapAlpha = 1.0f -   std::max( MiniMapZFadePercent,MaxMiniMapFadeAlpha) * (ShouldFade);
-	
-	
-	//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue, FString::Printf(TEXT("Mini map alpha fade %f difference %f"), MiniMapAlpha,fabs( PlayerReference->GetActorLocation().Z - GetActorLocation().Z)));
-	
-	MiniMapMat->SetVectorParameterValue("MiniMapCol", FVector4(MiniMapRgb, MiniMapAlpha));
-	MiniMapMat->SetScalarParameterValue("EnemyMiniMapRadi", EnemyMiniMapRadius);
-	MiniMapManagerRef->WriteToMiniMap(GetActorLocation(),0.0, EnemyMiniMapSectionRadius, MiniMapMat);
 	
 } 
 
